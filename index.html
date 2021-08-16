@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Wear</title>
+    <meta name="theme-color" content="#111111">
+    <link rel="icon" href="img/sw-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/sw-big-icon.jpg" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js"
+        integrity="sha512-2cbsQGdowNDPcKuoBd2bCcsJky87Mv0LEtD/nunJUgk6MOYTgVMGihS/xCEghNf04DPhNiJ4DZw5BxDd1uyOdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gilda+Display&family=Oswald:wght@350&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loading-bar.css">
+</head>
+
+<body>
+    <div id="banner">
+        <div id="banner-text-wrapper">
+            <h1>Stylish Wear<span><img src="img/i-icon.png" /></span></h1>
+            <div id="info">
+                <p>this website is just a dummy project. not official website nor sponsor.</p>
+            </div>
+        </div>
+    </div>
+    <div id="img-container">
+        <div id="img-container-wrapper">
+
+            <div class="img-content" data-translate-img="0%" data-bg-color="var(--grey)">
+                <picture>
+                    <source srcset="img/uniqlo_airism_hoodie-black.webp" type="image/webp">
+                    <source srcset="img/uniqlo_airism_hoodie-black.png" type="image/png">
+                    <img src="img/uniqlo_airism_hoodie-black.webp" />
+                </picture>
+            </div>
+
+            <div class="img-content" data-translate-img="-20%" data-bg-color="var(--blue)">
+                <picture>
+                    <source srcset="img/uniqlo_airism_hoodie-blue.webp" type="image/webp">
+                    <source srcset="img/uniqlo_airism_hoodie-blue.png" type="image/png">
+                    <img src="img/uniqlo_airism_hoodie-blue.webp" />
+                </picture>
+            </div>
+
+            <div class="img-content" data-translate-img="-40%" data-bg-color="var(--blue)">
+                <picture>
+                    <source srcset="img/onstreet_fln117-blue.webp" type="image/webp">
+                    <source srcset="img/onstreet_fln117-blue.png" type="image/png">
+                    <img src="img/onstreet_fln117-blue.webp" />
+                </picture>
+            </div>
+
+            <div class="img-content" data-translate-img="-60%" data-bg-color="var(--grey)">
+                <picture>
+                    <source srcset="img/s135-black.webp" type="image/webp">
+                    <source srcset="img/s135-black.png" type="image/png">
+                    <img src="img/s135-black.webp" />
+                </picture>
+            </div>
+
+            <div class="img-content" data-translate-img="-80%" data-bg-color="var(--blue)">
+                <picture>
+                    <source srcset="img/s135-blue.webp" type="image/webp">
+                    <source srcset="img/s135-blue.png" type="image/png">
+                    <img src="img/s135-blue.webp" />
+                </picture>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="text-container">
+
+        <div id="heading-shirt-container">
+            <div id="heading-locomotive">
+
+                <div class="locomotive-box" data-translate-title="0%">
+                    <h1>Uniqlo Airism Hoodie - Black</h1>
+                </div>
+
+                <div class="locomotive-box" data-translate-title="-20%">
+                    <h1>Uniqlo Airism Hoodie - <span class="blue-title">Blue</span></h1>
+                </div>
+
+                <div class="locomotive-box" data-translate-title="-40%">
+                    <h1>onStreet FLN-117<br> - <span class="blue-title">Blue</span></h1>
+                </div>
+
+                <div class="locomotive-box" data-translate-title="-60%">
+                    <h1>S135 long sleeve plaid shirt - Black</h1>
+                </div>
+
+                <div class="locomotive-box" data-translate-title="-80%">
+                    <h1>S135 long sleeve plaid shirt - <span class="blue-title">Blue</span></h1>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="separator-box">
+            <div id="text-separator"></div>
+        </div>
+
+        <div id="material-content">
+            <div id="materials-box">
+                <p class="materials show" id="uniqlo-black">
+                    The ideal warm-weather outwear. Lined with Airism
+                    material for long-lasting smooth, dry feel. and
+                    quick-drying DRY technology.
+                    <br>
+                    <span>materials :</span>
+                    <br>
+                    - 62% Cotton<br>
+                    - 38% Polyester
+                </p>
+                <p class="materials" id="uniqlo-blue">
+                    The ideal warm-weather outwear. Lined with Airism
+                    material for long-lasting smooth, dry feel. and
+                    quick-drying DRY technology.
+                    <br>
+                    <span>materials :</span>
+                    <br>
+                    - 62% Cotton<br>
+                    - 38% Polyester
+                </p>
+                <p class="materials" id="onstreet-fln">
+                    Double layer hoodie mixed with plaid shirt style.
+                    <br>
+                    <span>materials :</span>
+                    <br>
+                    - Cotton Combad<br>
+                    - Flannel
+                </p>
+                <p class="materials" id="s135-black">
+                    Men's classic long sleeve plaid shirt. styled with black color and thin white line.
+                    <br>
+                    <span>materials :</span>
+                    <br>
+                    - Flannel
+                </p>
+                <p class="materials" id="s135-blue">
+                    Men's classic long sleeve plaid shirt. styled with cool-tone navy and black color.
+                    <br>
+                    <span>materials :</span>
+                    <br>
+                    - Flannel
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="imgs-boxs">
+
+        <div class="swiper-outer">
+            <div #swiperRef="" class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide clicked">
+                        <picture>
+                            <source srcset="img/uniqlo_airism_hoodie-black.webp" type="image/webp">
+                            <source srcset="img/uniqlo_airism_hoodie-black.png" type="image/png">
+                            <img src="img/uniqlo_airism_hoodie-black.webp" />
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/uniqlo_airism_hoodie-blue.webp" type="image/webp">
+                            <source srcset="img/uniqlo_airism_hoodie-blue.png" type="image/png">
+                            <img src="img/uniqlo_airism_hoodie-blue.webp" />
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/onstreet_fln117-blue.webp" type="image/webp">
+                            <source srcset="img/onstreet_fln117-blue.png" type="image/png">
+                            <img src="img/onstreet_fln117-blue.webp" />
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/s135-black.webp" type="image/webp">
+                            <source srcset="img/s135-black.png" type="image/png">
+                            <img src="img/s135-black.webp" />
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/s135-blue.webp" type="image/webp">
+                            <source srcset="img/s135-blue.png" type="image/png">
+                            <img src="img/s135-blue.webp" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div>
+
+    <div id="side-footer">
+        <div id="side-text-wrapper">
+            <a href="http://ryrd.github.io" target="_blank">&copy;Ryrd</a>
+        </div>
+    </div>
+
+    <div id="hm">
+        <p id="hmp"></p>
+    </div>
+
+
+    <div id="preloader"></div>
+    <h1 id="preloader-text">LOADING</h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+        integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"
+        integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
