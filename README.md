@@ -6,5 +6,5 @@ created with:<br>
 pace.js<br>
 swiper.js<br>
 <br>
-Website live demo:
+Website live demo:<br>
 https://stylish-wear.netlify.app
