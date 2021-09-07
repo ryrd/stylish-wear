@@ -25,6 +25,7 @@ Pace.on('done', function () {
                 .from('.locomotive-box h1', { yPercent: 50, opacity: 0, ease: Expo.easeOut, duration: 1.5, clearProps:"all" }, '-=1.85')
                 .from('#text-separator', { scaleX: 0, ease: Expo.easeOut, duration: 1.5 , clearProps:"all"}, '-=1.85')
                 .from('#materials-box', { yPercent: 20, opacity: 0, ease: Expo.easeOut, duration: 1.5 , clearProps:"all"}, '-=1.7')
+                .from('.buy', { yPercent: 60, opacity: 0, ease: Expo.easeOut, duration: .7 ,clearProps:"all"}, '-=1.35')
                 .from('#side-text-wrapper a', { xPercent: -50, opacity: 0, ease: Expo.easeOut, duration: 1.5 ,clearProps:"all"}, '-=1.25')
                 .from('#imgs-boxs', { yPercent: 100, opacity: 0, ease: Expo.easeOut, duration: 1.5 , clearProps:"all"}, '-=1.9');
         },
@@ -38,6 +39,7 @@ Pace.on('done', function () {
                 .from('.locomotive-box h1', { yPercent: 50, opacity: 0, ease: Expo.easeOut, duration: 1.5 ,clearProps:"all"}, '-=1.4')
                 .from('#text-separator', { scaleX: 0, ease: Expo.easeOut, duration: 1.5 ,clearProps:"all"}, '-=1.4')
                 .from('#materials-box', { yPercent: 20, opacity: 0, ease: Expo.easeOut, duration: 1.5 ,clearProps:"all"}, '-=1.4')
+                .from('.buy', { yPercent: 60, opacity: 0, ease: Expo.easeOut, duration: .7 ,clearProps:"all"}, '-=1.3')
                 .from('#side-text-wrapper a', { xPercent: 50, opacity: 0, ease: Expo.easeOut, duration: 1.5 ,clearProps:"all"}, '-=1.25')
                 .from('#imgs-boxs', { yPercent: 100, opacity: 0, ease: Expo.easeOut, duration: 1.5 ,clearProps:"all"}, '-=1.6');
         }
