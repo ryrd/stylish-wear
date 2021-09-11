@@ -691,7 +691,7 @@ body{
     }
 }
 
-@media screen and (max-width:385px) and (max-width:640px) and (orientation: portrait){
+@media screen and (max-width:385px) and (max-height:640px) and (orientation: portrait){
     #img-container{
         height: 30vh;
     }
@@ -753,5 +753,12 @@ body{
 
     .swiper-slide{
         height: 100%;
+    }
+}
+
+@media screen and (max-width:824px) and (max-height:415px) and (orientation: landscape){
+    .materials a .buy{
+        width: 55px;
+        height: 30px;
     }
 }
