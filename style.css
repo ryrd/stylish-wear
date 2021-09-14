@@ -814,3 +814,17 @@ body{
         height: 60px;
     }
 }
+
+@media (min-width: 1920px) and (orientation: landscape){
+    #banner h1{
+        font-size: 3vw;
+    }
+
+    .materials a .buy{
+        height: 6vh;
+    }   
+
+    #side-footer #side-text-wrapper a {
+        font-size: 1.5vw;   
+    }
+}
