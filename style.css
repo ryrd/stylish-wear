@@ -344,6 +344,7 @@ body{
     text-decoration: none;
     font-size: 18px;
     font-style: italic;
+    text-decoration: underline;
     cursor: url('img/cpoint.png'), auto;
 }
 

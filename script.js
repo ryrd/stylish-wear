@@ -12,7 +12,6 @@ let opening = gsap.timeline();
 Pace.on('done', function () {
     document.querySelector('#preloader-text').style.animation = "none";
 
-
     ScrollTrigger.matchMedia({
 
         "(max-width: 630px) and (orientation: portrait)": function () {
