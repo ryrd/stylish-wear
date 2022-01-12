@@ -57,6 +57,8 @@ const s1 = document.querySelector('.img-content:first-child img');
 const s2 = document.querySelector('.img-content:last-child img');
 const m1 = ['e','v','i','l',' ','o','t',' ','d','i','a','r','f','a'];
 const m2 = ['e','v','i','l',' ','o','t',' ','d','e','r','i','t'];
+const sArr = [s1, s2];
+const mArr = [m1, m2];
 const hm = document.querySelector('#hm');
 const hmp = document.querySelector('#hmp');
 
@@ -69,7 +71,7 @@ function show(arr){
                     hm.style.display = 'none';
                     hmp.innerHTML = '';
             }
-    ,10);
+    ,1000);
 }
 
 function showMobile(e, arr){
@@ -83,12 +85,11 @@ function showMobile(e, arr){
     lastClick = time;
 }
 
-s1.addEventListener('dblclick', () => show([...m1]));
-s1.addEventListener('touchstart', () => showMobile(e, [...m1]));
-
-s2.addEventListener('dblclick', () => show([...m2]));
-s2.addEventListener('touchstart', () => showMobile(e, [...m2]));
-
+sArr.forEach( (s, i) => {
+        s.addEventListener('dblclick', () => show([...mArr[i]]));
+        s.addEventListener('touchstart', () => showMobile(e, [...mArr[i]]));
+    }
+)
 
 // -----swiper js-----
 var swiper = new Swiper(".mySwiper", {
