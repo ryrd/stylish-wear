@@ -71,7 +71,7 @@ function show(arr){
                     hm.style.display = 'none';
                     hmp.innerHTML = '';
             }
-    ,1000);
+    ,10);
 }
 
 function showMobile(e, arr){
