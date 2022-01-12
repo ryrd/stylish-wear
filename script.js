@@ -57,6 +57,8 @@ const s1 = document.querySelector('.img-content:first-child img');
 const s2 = document.querySelector('.img-content:last-child img');
 const m1 = ['e','v','i','l',' ','o','t',' ','d','i','a','r','f','a'];
 const m2 = ['e','v','i','l',' ','o','t',' ','d','e','r','i','t'];
+const hm = document.querySelector('#hm');
+const hmp = document.querySelector('#hmp');
 
 function show(arr){
     let str = arr.reverse().join('');
