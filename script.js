@@ -14,7 +14,7 @@ Pace.on('done', () => {
 
     ScrollTrigger.matchMedia({
 
-        "(max-width: 630px) and (orientation: portrait)": function () {
+        "(max-width: 630px) and (orientation: portrait)": () => {
             opening.to('#preloader-text', { yPercent: -90, ease: Power4.easeOut, duration: 1 })
                 .to('#preloader-text', { opacity: 0, ease: Power4.easeOut, duration: .4 }, '<')
                 .to('#preloader', { yPercent: 110, ease: Power4.easeOut, duration: 1.7 }, '-=.5')
@@ -28,7 +28,7 @@ Pace.on('done', () => {
                 .from('#side-text-wrapper a', { xPercent: -50, opacity: 0, ease: Expo.easeOut, duration: 1.5 ,clearProps:"all"}, '-=1.25')
                 .from('#imgs-boxs', { yPercent: 100, opacity: 0, ease: Expo.easeOut, duration: 1.5 , clearProps:"all"}, '-=1.9');
         },
-        "(min-width: 631px)": function () {
+        "(min-width: 631px)": () => {
             opening.to('#preloader-text', { yPercent: -80, ease: Power4.easeOut, duration: 1 })
                 .to('#preloader-text', { opacity: 0, ease: Power4.easeOut, duration: .4 }, '<')
                 .to('#preloader', { xPercent: 110, ease: Power4.easeOut, duration: 1.7 }, '-=.6')
