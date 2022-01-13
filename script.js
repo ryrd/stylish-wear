@@ -7,9 +7,9 @@ paceOptions = {
 
 // ------opening animation-----
 
-let opening = gsap.timeline();
+const opening = gsap.timeline();
 
-Pace.on('done', function () {
+Pace.on('done', () => {
     document.querySelector('#preloader-text').style.animation = "none";
 
     ScrollTrigger.matchMedia({
@@ -44,11 +44,9 @@ Pace.on('done', function () {
         }
     });
 
-    setTimeout(
-        function () {
-            document.querySelector('#img-container').style.transition = '.5s ease';
-        }
-        , 2500);
+    setTimeout(() => {
+        document.querySelector('#img-container').style.transition = '.5s ease';
+    }, 2500);
 
 });
 
@@ -62,19 +60,17 @@ const mArr = [m1, m2];
 const hm = document.querySelector('#hm');
 const hmp = document.querySelector('#hmp');
 
-function show(arr){
+const show = arr => {
     let str = arr.reverse().join('');
     hm.style.display = 'block';
     hmp.innerHTML = str;
-    setTimeout(
-            function(){
-                    hm.style.display = 'none';
-                    hmp.innerHTML = '';
-            }
-    ,10);
+    setTimeout(() => {
+        hm.style.display = 'none';
+        hmp.innerHTML = '';
+    },10);
 }
 
-function showMobile(e, arr){
+const showMobile = (e, arr) => {
     e.preventDefault();
     let date = new Date();
     let time = date.getTime();
@@ -85,14 +81,13 @@ function showMobile(e, arr){
     lastClick = time;
 }
 
-sArr.forEach( (s, i) => {
-        s.addEventListener('dblclick', () => show([...mArr[i]]));
-        s.addEventListener('touchstart', () => showMobile(e, [...mArr[i]]));
-    }
-)
+for (let i in sArr){
+    sArr[i].addEventListener('dblclick', () => show([...mArr[i]]));
+    sArr[i].addEventListener('touchstart', () => showMobile(e, [...mArr[i]]));
+}
 
 // -----swiper js-----
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 15,
     navigation: {
@@ -103,19 +98,19 @@ var swiper = new Swiper(".mySwiper", {
 
 // -----change shirt function----
 
-let swiperSlide = document.querySelectorAll('.swiper-slide');
+const swiperSlide = document.querySelectorAll('.swiper-slide');
 
-let imgContainerWrapper = document.querySelector('#img-container-wrapper');
-let imgContent = document.querySelectorAll('.img-content');
-let headingLocomotive = document.querySelector('#heading-locomotive');
-let locomotiveBox = document.querySelectorAll('.locomotive-box');
+const imgContainer = document.querySelector('#img-container');
 
-let imgContainer = document.querySelector('#img-container');
+const materials = document.querySelectorAll('.materials');
 
-let materials = document.querySelectorAll('.materials');
+const imgContainerWrapper = document.querySelector('#img-container-wrapper');
+const imgContent = document.querySelectorAll('.img-content');
+const headingLocomotive = document.querySelector('#heading-locomotive');
+const locomotiveBox = document.querySelectorAll('.locomotive-box');
 
 swiperSlide.forEach((sS, i) => {
-    sS.addEventListener("click", function () {
+    sS.addEventListener("click", () => {
         let swiperSlideClicked = document.querySelector('.clicked');
         if (swiperSlideClicked !== null) {
             swiperSlideClicked.classList.remove("clicked");
