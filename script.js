@@ -81,10 +81,10 @@ const showMobile = (e, arr) => {
     lastClick = time;
 }
 
-for (let i in sArr){
-    sArr[i].addEventListener('dblclick', () => show([...mArr[i]]));
-    sArr[i].addEventListener('touchstart', () => showMobile(e, [...mArr[i]]));
-}
+sArr.forEach((s,i) => {
+    s.addEventListener('dblclick', () => show([...mArr[i]]));
+    s.addEventListener('touchstart', () => showMobile(e, [...mArr[i]]));
+})
 
 // -----swiper js-----
 const swiper = new Swiper(".mySwiper", {
