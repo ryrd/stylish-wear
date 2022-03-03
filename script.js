@@ -97,13 +97,9 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 // -----change shirt function----
-
 const swiperSlide = document.querySelectorAll('.swiper-slide');
-
 const imgContainer = document.querySelector('#img-container');
-
 const materials = document.querySelectorAll('.materials');
-
 const imgContainerWrapper = document.querySelector('#img-container-wrapper');
 const imgContent = document.querySelectorAll('.img-content');
 const headingLocomotive = document.querySelector('#heading-locomotive');
@@ -112,17 +108,13 @@ const locomotiveBox = document.querySelectorAll('.locomotive-box');
 swiperSlide.forEach((sS, i) => {
     sS.addEventListener("click", () => {
         let swiperSlideClicked = document.querySelector('.clicked');
-        if (swiperSlideClicked !== null) {
-            swiperSlideClicked.classList.remove("clicked");
-        }
+        if (swiperSlideClicked !== null) {swiperSlideClicked.classList.remove("clicked")}
         sS.classList.toggle('clicked');
         imgContainerWrapper.style.transform = `translateX(${imgContent[i].dataset.translateImg})`;
         headingLocomotive.style.transform = `translateY(${locomotiveBox[i].dataset.translateTitle})`;
         imgContainer.style.backgroundColor = `${imgContent[i].dataset.bgColor}`;
         let showed = document.querySelector('.show');
-        if (showed !== null) {
-            showed.classList.remove("show");
-        }
+        if (showed !== null) { showed.classList.remove("show")}
         materials[i].classList.add('show');
     })
 })
